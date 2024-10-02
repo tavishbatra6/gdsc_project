@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GDSC Tavish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://www.fontspace.com/harry-p-font-f44342"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "harry-puttar";
+        src: url(font/harry-p-font/HarryP-MVZ6w.ttf);
+      }
+      body {
+        margin: 0;
+        background-color: black;
+      }
+      .main {
+        display: grid;
+        margin: auto;
+        grid-template-rows: 600px 300px;
+        height: 100%;
+        padding: 10px;
+        gap: 10px;
+        overflow: hidden;
+      }
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .center:hover {
+        transform: scale(1.05);
+        transition: 0.7s ease-in-out;
+      }
+      .div-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        overflow: hidden;
+      }
+      .innerDIV {
+        display: grid;
+        grid-template-rows: 2fr 3fr;
+        gap: 10px;
+      }
+      .box {
+        color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        font-family: "Gloria Hallelujah", cursive;
+        font-weight: 400;
+        font-style: italic;
+      }
+      .box h1 {
+        height: 100%;
+        margin: 0;
+        font-size: 60px;
+      }
+      .date {
+        font-family: "Sofia", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+      }
+      .div-2 {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1.7fr 1fr;
+        overflow: hidden;
+      }
+      .harryDiv {
+        font-family: "harry-puttar";
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="div-1">
+        <div
+          class="center"
+          style="background-color: #f32d55; border-top-left-radius: 15px"
+        >
+          <img src="icons/java-logo.png" />
+        </div>
+        <div class="innerDIV">
+          <div style="background-color: #fae1d7" class="date center">
+            19-10-2023
+          </div>
+          <div style="background-color: #1e191e" class="box">
+            <h1 class="center">Tavish Batra</h1>
+          </div>
+        </div>
+        <div
+          class="center"
+          style="background-color: #b9b4fe; border-top-right-radius: 15px"
+        >
+          <img src="icons/visibility.png" />
+        </div>
+      </div>
+      <div class="div-2 harryDiv">
+        <div
+          class="center"
+          style="background-color: #a5faaa; border-bottom-left-radius: 15px"
+        >
+          Harry
+        </div>
+        <div
+          class="center"
+          style="background-color: #fae1d7; border-bottom-right-radius: 15px"
+        >
+          Potter
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
